@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Button, Container } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import axios from 'axios';
-import qs from 'qs'
+import qs from 'qs' // CStringify library
+
 // Fetch drone information
 export default class StatusBar extends Component {
     fetchInformation = async (cmd = 'battery?') => {
