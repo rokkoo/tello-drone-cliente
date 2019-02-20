@@ -1,0 +1,25 @@
+.blockContainer {
+    color: '#F7F4EF';
+    justify-content: center;
+    font-size: calc(18px + 2vmin);
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.blockContainer > .dataInformation {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blockData {
+    font-size: calc(40px + 2vmin);
+}
+
+.blockText {
+    color: '#B2A293';
+    opacity: 0.5;
+    padding-left: 10px;
+}
