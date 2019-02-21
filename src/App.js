@@ -4,6 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 
 import StatusBar from './StatusBar'
+import { Commands } from './commands'
 import { Camera, Video } from './camera'
 import { TimeFly, Battery } from './conecctions'
 import { BlockGroup } from './information'
@@ -11,11 +12,7 @@ import { BlockGroup } from './information'
 class App extends Component {
   render() {
     return (
-      <div className="App"
-      style={{  backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',}}
-      >
+      <div className="App">
         <div className="capture">
           <Camera />
           <Video />
@@ -28,7 +25,7 @@ class App extends Component {
           <BlockGroup />
         </div>
         <div className="stream">
-          <StatusBar />
+          <Commands />
         </div>
       </div>
     );
