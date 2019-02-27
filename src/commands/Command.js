@@ -2,7 +2,11 @@ import React, { useEffect } from 'react'
 import { Icon } from 'semantic-ui-react'
 import './app.css'
 
-import { SocketContext } from '../fetch'
+import { SocketContext, SocketConnection } from '../fetch'
+
+SocketConnection.on('stream', (stream) => {
+    console.log(stream)
+})
 
 export default function  Command({ text, iconName, backgroundColor = '#cd84f1', command }) {
     return iconName 
